@@ -40,9 +40,6 @@ htmlcov/
 .coverage.*
 .cache
 
-# Migrations (Alembic)
-alembic/versions/
-
 # Distribution / packaging
 build/
 dist/
