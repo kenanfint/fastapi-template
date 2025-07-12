@@ -34,7 +34,6 @@ If you'd like a different project name, rename the folder:
 
 ```bash
 mv fastapi-template `your-project-name`
-cd `your-project-name`
 ```
 
 ```bash
