@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "fastapi-template"
+version = "0.1.0"
+description = "A clean and scalable FastAPI project template."
+authors = ["Kenan Fintelman <kenanfint@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.2"
+uvicorn = { extras = ["standard"], version = "^0.29.0" }
+sqlalchemy = "^2.0.30"
+pydantic = "^2.7.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+black = "^24.4.2"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

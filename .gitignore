@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+*.env
+*.venv/
+venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# MySQL
+*.sql
+
+# SQLite
+*.db
+
+# Logs
+*.log
+
+# Uvicorn reload files
+*.reload
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+
+# Migrations (Alembic)
+alembic/versions/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
