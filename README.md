@@ -37,6 +37,10 @@ mv fastapi-template `your-project-name`
 cd `your-project-name`
 ```
 
+```bash
+cd `your-project-name`
+```
+
 ### 3. Remove the existing git history
 
 ```bash
