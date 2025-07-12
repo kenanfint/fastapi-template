@@ -123,9 +123,7 @@ python_fast_api_template/
 
 ---
 
-## ✨ How to create a new entity (e.g., `users`)
-
-To add a new resource (like users), follow these steps:
+## ✨ How to create a new resource (e.g., `users`)
 
 ### 1. Create your database model
 
@@ -148,11 +146,11 @@ class User(Base):
 `app/schemas/user.py`:
 
 ```python
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 
 class UserBase(BaseModel):
     name: str
-    email: EmailStr
+    email: str
 
 class UserCreate(UserBase):
     pass
@@ -161,7 +159,7 @@ class UserRead(UserBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 ```
 
 ### 3. Implement CRUD
